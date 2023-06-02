@@ -7,6 +7,9 @@ import redis.clients.jedis.JedisSentinelPool;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ *
+ */
 public class Jedis04_Sentinel {
 
     public static void main(String[] args) {
