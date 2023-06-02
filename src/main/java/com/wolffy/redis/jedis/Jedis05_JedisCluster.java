@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 集群的Jedis开发
+ * 集群的Jedis开发 6个实例 三主三从
  */
 public class Jedis05_JedisCluster {
     public static void main(String[] args) {
@@ -37,6 +37,8 @@ public class Jedis05_JedisCluster {
             jedisPoolConfig.setTestOnBorrow(true); //取连接的时候进行一下测试 ping pong
 
             jc = new JedisCluster(hostAndPorts,jedisPoolConfig);
+
+
         }
         return jc;
     }
