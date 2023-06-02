@@ -24,8 +24,8 @@ public class Jedis05_JedisCluster {
     public static JedisCluster getJedisCluster(){
         if(jc == null ){
             Set<HostAndPort> hostAndPorts = new HashSet<>() ;
-            hostAndPorts.add(new HostAndPort("192.168.202.202", 6379));
-            hostAndPorts.add(new HostAndPort("192.168.202.203", 6379));
+            hostAndPorts.add(new HostAndPort("172.16.245.102", 6379));
+            hostAndPorts.add(new HostAndPort("172.16.245.103", 6379));
             // ...
             //主要配置
             JedisPoolConfig jedisPoolConfig =new JedisPoolConfig();
